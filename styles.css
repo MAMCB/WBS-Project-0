@@ -79,6 +79,39 @@
 
 /* Begin Section 4 */
 
+#section4{
+    text-align: center;
+    padding: 3rem;
+}
+#expertise{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 33% 33% 33%;
+    margin:3rem auto;
+    width: 70%;
+}
+
+#section4 hr{
+    width:3rem;
+}
+
+#div1,#div2{
+    border-right: 1px solid rgba(128, 128, 128, 0.219);
+    border-bottom:1px solid rgba(128, 128, 128, 0.219) ;
+}
+#div3{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.219);
+}
+#div4,#div5{
+    border-right: 1px solid rgba(128, 128, 128, 0.219);
+}
+
+
+
+
+.expertiseDivs{
+padding: 2rem;
+}
 
 
 /* End Section 4 */
