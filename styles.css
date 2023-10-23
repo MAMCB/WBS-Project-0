@@ -30,7 +30,6 @@ footer {
 /* Begin nav */
 header {
     font-family: 'Roboto', sans-serif;
-    background-image: url(./images/bgk-header.png);
     background-image:
     linear-gradient(to right, rgba(46, 39, 74, 0.52), rgba(68, 52, 102, 0.73)),
     url('./images/bgk-header.png');
