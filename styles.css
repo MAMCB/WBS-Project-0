@@ -1,17 +1,96 @@
 /* Begin body */
-
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template: 
+    "header" 60vh
+    "main" auto
+    "footer" 20vh
+    /1fr
+    ;
+}
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
 
 
 
 /* End body */
 
 /* Begin nav */
-
+header {
+    background-image: url(./images/bgk-header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+.navbar-logo > img {
+    padding: 0.4em;
+    max-height: 2.5em;
+}
+.navbar-logo > p {
+    font-weight: lighter;
+}
+.navbar-logo {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-direction: row;
+    color: aqua;
+}
+.navbar {
+    grid-area: 1 / 3 / 2 / 5;
+    margin-right: 10em;
+}
+.navbar-links {
+    list-style: none;
+    display: flex;
+    
+}
+.navbar-links > li {
+    padding: 0.3em;
+    color: white;
+    min-width: fit-content;
+}
+.navbar-links > li > a:hover {
+    color: aqua;
+    transition: ease-in-out 0.6s;
+}
+.navbar-links > li > a {
+    text-decoration: none;
+    color: white;
+}
 /* End nav */
 
 /* Begin Hero section */
-
-
+#heroSection {
+    grid-area: 2 / 2 / 4 / 5;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: white;
+    padding: 1em;
+    margin-top: 3em;
+}
+.heroButton {
+    border: solid 2px aqua;
+    padding: 0.5em;
+    background: transparent;
+    color: aqua;
+    margin: 1em;
+}
+.heroButton:hover {
+    color: white;
+}
 
 
 
@@ -71,6 +150,11 @@
 
 
 /* Begin footer */
+footer {
+    background-image: url(./images/bgk-footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 
 
