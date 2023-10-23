@@ -9,7 +9,7 @@ body {
     grid-template: 
     "header" 85vh
     "main" auto
-    "footer" 30vh
+    "footer" 40vh
     /1fr; 
 }
 
@@ -31,6 +31,9 @@ footer {
 header {
     font-family: 'Roboto', sans-serif;
     background-image: url(./images/bgk-header.png);
+    background-image:
+    linear-gradient(to right, rgba(46, 39, 74, 0.52), rgba(68, 52, 102, 0.73)),
+    url('./images/bgk-header.png');
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
@@ -48,7 +51,7 @@ header {
     display: inline;
     font-weight: lighter;
     font-size: 30px;
-    background-image: linear-gradient(to right, #00e0d0, rgb(42, 200, 253));
+    background-image: linear-gradient(to right, #00e0d0, #3f739b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0.5em 0em 0em 0.3em;
@@ -126,15 +129,19 @@ header {
     font-family: "Playfair Display";
     text-align: center;
     margin-bottom: 0;
+    padding-bottom: 0;
 }
 #heroSection > p {
-    width: 780px;
+    display: flex;
+    max-width: 780px;
+    min-width: 500px;
     height: 79px;
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 24px;
     font-weight: 300;
     text-align: center;
+    overflow: hidden;
 }
 
 hr { 
@@ -143,7 +150,7 @@ hr {
     border-style: inset; 
     border-width: 1px;
     width: 50px;
-    height: 1px;
+    height: 2px;
     background-color: #00dfcf;
     border: none;
 }
@@ -240,7 +247,9 @@ padding: 2rem;
 
 /* Begin footer */
 footer {
-    background-image: url(./images/bgk-footer.png);
+    background-image:
+    linear-gradient(to right, rgba(46, 39, 74, 0.52), rgba(68, 52, 102, 0.73)),
+    url('./images/bgk-footer.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
