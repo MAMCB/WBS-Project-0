@@ -127,7 +127,7 @@ transition: 0.5s;
     border-radius: 10px;
     background-color: goldenrod;
     color: white;
-    font-size: larger;
+    /* font-size: larger; */
 }
 
 
