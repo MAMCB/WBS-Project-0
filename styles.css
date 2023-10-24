@@ -56,6 +56,10 @@
     padding: 0.3rem;
     border: 2px solid turquoise;
     text-decoration: none;
+    background: linear-gradient(to right, goldenrod 50%, transparent 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
   }
 
 
@@ -111,6 +115,19 @@
 
 .expertiseDivs{
 padding: 2rem;
+transition: 0.5s;
+}
+
+.expertiseDivs:hover{
+    height: 20rem;
+    width:20rem;
+    z-index: 2;
+    box-shadow: 5px 5px;
+    border:2px solid black;
+    border-radius: 10px;
+    background-color: goldenrod;
+    color: white;
+    font-size: larger;
 }
 
 
@@ -134,7 +151,11 @@ padding: 2rem;
 #section5 button{
     margin:1rem;
     padding: 0.5rem;
-    background-color: transparent;
+    background: linear-gradient(to right, goldenrod 50%, transparent 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+        
     color:aqua;
     border: 1px solid aqua;
 
@@ -160,6 +181,74 @@ padding: 2rem;
 
 
 /* Begin Section 6 */
+
+#section6{
+    display: flex;
+    justify-content: center;
+}
+#logos{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap:1rem;
+    
+}
+#logos img{
+    width:10rem;
+}
+
+#form form{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+#form, #client-logos{
+    margin:4rem;
+    width: 30%;
+}
+
+
+#form form>*{
+    margin-bottom:1.5rem;
+}
+
+#form form>input{
+    height:2rem;
+    padding: 0.5rem;
+}
+
+#message{
+    padding: 1rem;
+}
+
+#submit-button{
+   
+    padding: 0.5rem;
+    background: linear-gradient(to right,goldenrod  50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    
+    color: turquoise;
+    border: 2px solid turquoise;
+    width: 8rem;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0.5rem;
+    
+}
+
+#submit-button:hover,#section5 button:hover,.btn:hover{
+    background-position: left bottom;
+    
+    
+}
+
+
 
 
 
