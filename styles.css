@@ -167,6 +167,38 @@ header {
 
 /* Begin Section 2 */
 
+.section2 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    
+    align-items: center;
+}
+
+#ourstory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.ourstory-divs {
+    flex: 1;
+    padding: 20px;
+}
+
+#image img {
+    max-width: 100%;
+    height: auto;
+    float: right;
+}
+
+.btn {
+    color: turquoise;
+    padding: 0.3rem;
+    border: 2px solid turquoise;
+    text-decoration: none;
+  }
 
 
 
@@ -228,6 +260,41 @@ padding: 2rem;
 
 
 /* Begin Section 5 */
+#section5{
+    background-image: url("./images/bgk-header.png");
+    background-size: 120rem;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    
+}
+
+#section5 hr{
+    width: 3rem;
+}
+
+#section5 button{
+    margin:1rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    color:aqua;
+    border: 1px solid aqua;
+
+}
+
+#team{
+    display: flex;
+    justify-content: center;
+    margin:3rem;
+}
+.teamMember{
+    margin: 0.5rem;
+    border: 1px solid grey;
+}
+
+.teamMember >img{
+    width:15rem;
+}
 
 
 
