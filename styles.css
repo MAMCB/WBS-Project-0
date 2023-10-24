@@ -1,17 +1,159 @@
 /* Begin body */
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:wght@400;900;700&family=Roboto:wght@100;300;400;500;900&display=swap');
 
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template: 
+    "header" 85vh
+    "main" auto
+    "footer" 50vh
+    /1fr; 
+}
+
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
 
 
 
 /* End body */
 
 /* Begin nav */
-
+header {
+    font-family: 'Roboto', sans-serif;
+    background-image:
+    linear-gradient(to right, rgba(46, 39, 74, 0.52), rgba(68, 52, 102, 0.73)),
+    url('./images/bgk-header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6,1fr);
+    overflow: scroll;
+}
+    
+.navbar-logo > img {
+    padding: 0.1em;
+    max-height: 3.3em;
+    margin-top: 0.4em;
+}
+.navbar-logo > p {
+    display: inline;
+    font-weight: lighter;
+    font-size: 30px;
+    background-image: linear-gradient(to right, #00e0d0, #3f739b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0.5em 0em 0em 0.3em;
+    
+}
+.navbar-logo {
+    grid-area: 1 / 2 / 2 / 2;
+    display: flex;
+    flex-direction: row;
+    color: #00e0d0;
+}
+.navbar {
+    grid-area: 1 / 3 / 1 / 5;
+    padding-left: 3em;
+}
+.navbar-links {
+    list-style: none;
+    display: flex;
+    
+}
+.navbar-links > li {
+    padding: 0.3em;
+    color: white;
+    min-width: fit-content;
+    margin: 0.3em;
+    
+}
+.navbar-links > li > a:hover {
+    color: #00e0d0;
+    transition: ease-in-out 0.4s;
+}
+.navbar-links > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0;
+}
 /* End nav */
 
 /* Begin Hero section */
+#heroSection {
+    grid-area: 3 / 2 / 4 / 6;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: white;
+    padding: 1em;
+    margin-top: 3em;
+    margin-bottom: 10em;
+    
+}
+.heroButton {
+    border: solid 2px #00e0d0;
+    padding: 0.5em;
+    background: transparent;
+    margin: 1em;
+    font-size: 16px;
+    color: #00e0d0;
+    font-weight: 400;
+    font-family: "Hammersmith One";
+    text-align: center;
 
+}
+.heroButton:hover {
+    color: white;
+    transition: ease-in-out 0.2s;
+}
+#heroSection > h1 {
+    width: 780px;
+    height: 74px;
+    font-size: 32px;
+    letter-spacing: 0px;
+    font-weight: 900;
+    font-family: "Playfair Display";
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#heroSection > p {
+    display: flex;
+    max-width: 780px;
+    min-width: 500px;
+    height: 79px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-weight: 300;
+    text-align: center;
+    overflow: hidden;
+}
 
+#hero-s-line { 
+    display: block;
+    overflow: hidden; 
+    border-style: inset; 
+    border-width: 1px;
+    width: 50px;
+    height: 2px;
+    background-color: #00dfcf;
+    border: none;
+}
 
 
 
@@ -171,7 +313,140 @@ padding: 2rem;
 
 
 /* Begin footer */
+footer {
+    background-image:
+    linear-gradient(to right, rgba(46, 39, 74, 0.52), rgba(68, 52, 102, 0.73)),
+    url('./images/bgk-footer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+.footer-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0em 10em 1em 10em;
+}
 
+.footer-terms > a {
+    text-decoration: none;
+    font-weight: 400;
+    color: white;
+    padding: 1em;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 26px;
+}
 
+.footer-copy > p {
+    font-weight: 300;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    padding: 1em;
+}
+.footer-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 1em 12em 1em 12em;
+    padding: 1em;
+    gap: 2rem;
+
+}
+.footer-1-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: flex-start;
+    
+}
+.footer-1-1 > p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    color: white;
+    font-weight: 300;
+    max-width: 25rem;
+
+}
+.footer-logo {
+    padding: 1em 1em 1em 0em;
+    align-items: center;
+}
+.footer-logo > img {
+    padding: 0.1em;
+    max-height: 3.3em;
+    margin-top: 0.4em;
+}
+.footer-logo > p {
+    display: inline;
+    font-weight: lighter;
+    font-size: 30px;
+    background-image: linear-gradient(to right, #00e0d0, #3f739b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0.5em 0em 0em 0.3em;
+}
+.footer-1-2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    max-width: 25rem;
+    margin-top: 3rem;
+}
+.footer-1-2 > h3 {
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.footer-address, .footer-call {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 26px;
+    display: flex;
+    flex: 1;
+    gap: 0.2rem;
+    justify-content: flex-start;
+}
+.footer-address > img {
+    padding: 0.5rem;
+    display: flex;
+    max-height: 30px;
+    max-width: 26px;
+    align-self: flex-start;
+    margin-top: 0.6em;
+    flex: 1;
+}
+.footer-address > p {
+    display: flex;
+    letter-spacing: 1px;
+    
+}
+.footer-call > img {
+    padding: 0.5rem;
+    display: flex;
+    max-height: 30px;
+    max-width: 26px;
+    align-self: flex-start;
+    margin-top: 0.6em;
+    flex: 1;
+}
+.footer-call > p {
+    display: flex;
+    letter-spacing: 1px;
+}
+
+.footer-1-3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+}
 /* End footer */
