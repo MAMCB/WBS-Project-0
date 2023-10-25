@@ -9,7 +9,7 @@ body {
     grid-template: 
     "header" 85vh
     "main" auto
-    "footer" 50vh
+    "footer" 65vh
     /1fr; 
 }
 
