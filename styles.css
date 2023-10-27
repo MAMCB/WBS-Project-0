@@ -9,7 +9,7 @@ body {
     grid-template: 
     "header" 85vh
     "main" auto
-    "footer" 65vh
+    "footer" max-content
     /1fr; 
 }
 
@@ -24,14 +24,13 @@ footer {
 }
 
 
-
 /* End body */
 
 /* Begin nav */
 header {
     font-family: 'Roboto', sans-serif;
     background-image:
-    linear-gradient(to right, rgba(46, 39, 74, 0.52), rgba(68, 52, 102, 0.73)),
+    linear-gradient(90deg, #09052f24 0%, #431d5e4b 100%),
     url('./images/bgk-header.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -111,12 +110,10 @@ header {
 .heroButton {
     border: solid 2px #00e0d0;
     padding: 0.5em;
-   
     margin: 1em;
     font-size: 16px;
     color: #00e0d0;
-    font-weight: 400;
-    font-family: "Hammersmith One";
+    font-weight: 500;
     text-align: center;
     background: linear-gradient(to right, goldenrod 50%, transparent 50%);
         background-size: 200% 100%;
@@ -124,10 +121,7 @@ header {
         transition: all .5s ease-out;
 
 }
-/* .heroButton:hover {
-    color: white;
-    transition: ease-in-out 0.2s;
-} */
+
 #heroSection > h1 {
     width: 780px;
     height: 74px;
@@ -210,6 +204,11 @@ display: flex;
     align-items: flex-start;
 }
 
+#ourstory-heading {
+    font-family: "Playfair Display";
+    letter-spacing: 1px;
+}
+
 #image img {
     
     min-width: 18rem;
@@ -220,7 +219,7 @@ display: flex;
 
 .btn {
     color: turquoise;
-    padding: 0.7rem;
+    padding: 0.6rem 0.6rem 0.4rem 0.6rem ;
     margin:1rem 0rem;
     font-weight: 600;
     border: 2px solid turquoise;
@@ -246,7 +245,7 @@ display: flex;
 /* Begin Section 3 */
 
 #section3 {
-    background-image: url('./images/bgk-middle.png'); 
+    background-image:linear-gradient(90deg, #09052f24 0%, #431d5e4b 100%), url('./images/bgk-middle.png'); 
     background-size: cover;
     background-position: center;
     height: 65vh;
@@ -295,6 +294,12 @@ display: flex;
 #section4{
     text-align: center;
     padding: 3rem;
+    
+}
+#section4 > h2,#section4 > p{
+    font-family: "Playfair Display";
+    letter-spacing: 1px;
+    color: #2f2d35;
 }
 #expertise{
     display: grid;
@@ -336,7 +341,6 @@ transition: 0.5s;
     border-radius: 10px;
     background-color: goldenrod;
     color: white;
-    /* font-size: larger; */
 }
 
 
@@ -345,12 +349,21 @@ transition: 0.5s;
 
 /* Begin Section 5 */
 #section5{
-    background-image: url("./images/bgk-header.png");
-    background-size: 120rem;
+    background-image:linear-gradient(90deg, #09052f24 0%, #431d5e4b 100%), url("./images/bgk-header.png");
+    /* background-size: 120rem; */
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
     text-align: center;
     padding: 3rem;
     
+}
+#section5 > h2, #section5 > p {
+    font-family: "Playfair Display";
+    letter-spacing: 1px;
+}
+#section5 > h2{
+    font-weight: 500;
 }
 
 #section5 hr{
@@ -359,7 +372,7 @@ transition: 0.5s;
 
 #section5 button{
     margin:1rem;
-    padding: 1rem;
+    padding: 0.9rem;
     font-weight: 600;
     background: linear-gradient(to right, goldenrod 50%, transparent 50%);
         background-size: 200% 100%;
@@ -368,6 +381,7 @@ transition: 0.5s;
         
     color:aqua;
     border: 1px solid aqua;
+    letter-spacing: 1px;
 
 }
 
@@ -409,7 +423,8 @@ transition: 0.5s;
 }
 
 #form form{
-    margin-top: 2rem;
+    margin: 2rem 0.01rem 0.01rem 0.01rem;
+    padding: 0.001rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -421,6 +436,10 @@ transition: 0.5s;
     width: 30%;
 }
 
+#form > h2, #client-logos > h2 {
+    font-family: "Playfair Display";
+    letter-spacing: 1px;
+}
 
 #form form>*{
     margin-bottom:1.5rem;
@@ -429,6 +448,7 @@ transition: 0.5s;
 #form form>input{
     height:2rem;
     padding: 0.5rem;
+    margin: 0.05rem 0.05rem 1.5rem 0.05rem;
 }
 
 #message{
@@ -436,31 +456,21 @@ transition: 0.5s;
 }
 
 #submit-button{
-   
-    
     background: linear-gradient(to right,goldenrod  50%, transparent 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all .5s ease-out;
-    
     color: turquoise;
     border: 2px solid turquoise;
     width: 8rem;
     font-size: 15px;
     font-weight: 600;
-    padding: 1rem 1.5rem;
-    
+    padding: 0.8rem 1.5rem;
 }
 
 #submit-button:hover,#section5 button:hover,.btn:hover,.heroButton:hover{
-    background-position: left bottom;
-    
-    
+    background-position: left bottom; 
 }
-
-
-
-
 
 /* End Section 6 */
 
@@ -471,8 +481,9 @@ transition: 0.5s;
 
 /* Begin footer */
 footer {
+    bottom: 0;
     background-image:
-    linear-gradient(to right, rgba(46, 39, 74, 0.52), rgba(68, 52, 102, 0.73)),
+    linear-gradient(90deg, #09052f24 0%, #431d5e4b 100%),
     url('./images/bgk-footer.png');
     background-size: cover;
     background-repeat: no-repeat;
